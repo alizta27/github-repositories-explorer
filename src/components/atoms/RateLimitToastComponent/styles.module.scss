@@ -1,0 +1,17 @@
+@use "@styles/colors";
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.desc {
+  font-size: 14px;
+}
+
+.apiKeyInput {
+  border-radius: 8px;
+  background: colors.$bg-input-field;
+  height: 40px;
+  padding: 4px;
+}

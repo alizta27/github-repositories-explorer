@@ -1,0 +1,39 @@
+name: Deploy GitHub Repos Explorer
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout actions
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # Install Dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Build Project
+      - name: Build Project
+        run: npm run build
+
+      # Deploy to GitHub Pages
+      - name: Deploy Project
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./dist
+          force_orphan: true

@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+:root {
+  --404blue: #0e0620;
+  --404white: #fff;
+  --404primary: #3e37c1;
+}
+
+.svgContainer {
+  width: 50%;
+}
+.contentContainer {
+  width: 50%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito Sans";
+  color: var(--404blue);
+  font-size: 1em;
+
+  button {
+    font-family: "Nunito Sans";
+  }
+  ul {
+    list-style-type: none;
+    padding-inline-start: 35px;
+  }
+  svg {
+    width: 100%;
+  }
+  h1 {
+    font-size: 7.5em;
+    margin: 15px 0px;
+    font-weight: bold;
+  }
+  h2 {
+    font-weight: bold;
+  }
+}
+
+.btn {
+  z-index: 1;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  padding: 8px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  transition: 0.2s ease;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.greenBtn {
+  @extend .btn;
+  border: 4px solid var(--404primary);
+  color: var(--404blue);
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--404primary);
+    z-index: -1;
+    transition: 0.2s ease;
+  }
+  &:hover {
+    color: var(--404white);
+    background: var(--404primary);
+    transition: 0.2s ease;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.mainContentContainer {
+  display: flex;
+  align-items: center;
+}

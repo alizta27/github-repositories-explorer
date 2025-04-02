@@ -1,0 +1,21 @@
+.headerContentWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landingIlu {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.headerText {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.username {
+  font-size: 16px;
+  font-weight: 600;
+}

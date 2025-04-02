@@ -1,0 +1,26 @@
+{
+  "BUTTON": {
+    "LOAD_MORE": "Load More",
+    "SUBMIT_KEY": "Submit PAT Key"
+  },
+  "DETAIL": {
+    "TITLE": "User Detail"
+  },
+  "ERROR": {
+    "404": "No data found",
+    "422": "Please fill the search input",
+    "429": "You've reach the limit. Please wait for view minutes",
+    "500": "Something went wrong. Please try again"
+  },
+  "LANDING": {
+    "TITLE": "Find GitHub users & explore their repositories!"
+  },
+  "RATE_LIMIT_NOTIF": {
+    "INPUT_LABEL": "GitHub PAT Key:",
+    "NOTIF_DESC": "You've reached the rate limit! To continue making requests, please enter your GitHub PAT (Personal Access Token) below. Your PAT will only be stored on your local device and never on our servers. Please ensure you keep it secure when entering it here",
+    "NOTIF_DESC_EXTRA": "About GitHub PAT key"
+  },
+  "SEARCH": {
+    "TITLE": "GitHub User Explorer"
+  }
+}

@@ -1,0 +1,22 @@
+.searchInput {
+  border-radius: 100px;
+  height: 40px;
+  width: 100%;
+
+  :global {
+    .MuiInputBase-root {
+      height: 40px !important;
+    }
+    .MuiOutlinedInput-notchedOutline {
+      border-radius: 100px !important;
+      border: none;
+    }
+  }
+}
+.searchContainer {
+  display: flex;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid white;
+  width: 100%;
+}
